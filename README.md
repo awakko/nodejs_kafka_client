@@ -11,7 +11,7 @@ Being thought about
 open terminal, run:
 
 - git clone https://github.com/awakko/nodejs_kafka_client.git
-- cd node_kafka_client
+- cd nodejs_kafka_client
 - npm install
 
 rename the file .env.axample to .env
