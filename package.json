@@ -11,7 +11,9 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "kafka-client-test": "file:",
-    "kafkajs": "^2.2.4"
+    "kafkajs": "^2.2.4",
+    "kafkajs-snappy": "^1.1.0",
+    "snappy": "^7.2.2"
   },
   "type": "module"
 }
