@@ -21,9 +21,17 @@ async function send() {
   await producer.connect()
 
   const messages = []
-  for (let i = 1; i <= 10; i++) {
-    messages.push({ value: `KafkaJS Message ${10+i}` })
-  }
+  // for (let i = 1; i <= 10; i++) {
+  //   messages.push({ value: `KafkaJS Message ${10+i}` })
+  // }
+  messages.push({ value: `{
+  "registertime": 1503928486016,
+  "userid": "User_2",
+  "name": "John",
+  "email": "john@test.com",
+  "regionid": "Region_6",
+  "gender": "FEMALE"
+}` })
 
   let resp = await producer.send({
     topic: topicName,
